@@ -18,18 +18,11 @@ export default function Home() {
           <LargeHeading
             size='lg'
             className='three-d text-black dark:text-light-gold'>
-            Easily determine <br /> text similarity.
+            UFV CSA
           </LargeHeading>
 
           <Paragraph className='max-w-xl lg:text-left'>
-            With the Text Similarity API, you can easily determine the
-            similarity between two pieces of text with a free{' '}
-            <Link
-              href='/login'
-              className='underline underline-offset-2 text-black dark:text-light-gold'>
-              API key
-            </Link>
-            .
+          UFV’s Computing Student Association exists to represent computing students to UFV faculty and Staff. We provide a space for students to hang out, make friends, and inquire about tutoring or help with projects. We manage the Student Computing Centre (SCC) in room D224 in D-building at the Abbotsford campus. If you have an event you want to organize, or a project you would like to run, talk with us and we’ll work with you to make it happen.
           </Paragraph>
 
           <div className='relative w-full max-w-xl lg:max-w-3xl lg:left-1/2 aspect-square lg:absolute'>
