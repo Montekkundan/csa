@@ -19,7 +19,7 @@ function Banner() {
         </div>
         <div>
         <Paragraph className='text-gray-400 mt-5 md:mt-2'>
-            Meeting breifs | upcoming events | upcoming projects | etc.
+            Meeting briefs | upcoming events | upcoming projects | etc.
         </Paragraph>
         </div>
     </div>
