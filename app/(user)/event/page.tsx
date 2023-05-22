@@ -1,11 +1,9 @@
-
-
 import Banner from '@/components/Banner'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
+  title: 'CSA UFV | Events',
+  description: 'Events page of CSA UFV',
 }
 
 export default function Home() {

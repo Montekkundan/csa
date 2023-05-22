@@ -6,8 +6,8 @@ import Paragraph from '@/components/ui/Paragraph'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Similarity API | Home',
-  description: 'Free & open-source text similarity API',
+  title: 'CSA UFV | Home',
+  description: 'Home page CSA UFV',
 }
 
 export default function Home() {
