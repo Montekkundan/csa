@@ -20,18 +20,18 @@ const MobileMenu = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [open, setOpen] = useState<boolean>(false)
 
-  const signUserOut = async () => {
-    try {
-      setIsLoading(true)
-      await signOut()
-    } catch (error) {
-      toast({
-        title: 'Error signing out',
-        message: 'Please try again later.',
-        type: 'error',
-      })
-    }
-  }
+  // const signUserOut = async () => {
+  //   try {
+  //     setIsLoading(true)
+  //     await signOut()
+  //   } catch (error) {
+  //     toast({
+  //       title: 'Error signing out',
+  //       message: 'Please try again later.',
+  //       type: 'error',
+  //     })
+  //   }
+  // }
 
   return (
     <nav className='md:hidden fixed z-50 bottom-20 right-0 left-0 flex justify-center'>
@@ -47,14 +47,14 @@ const MobileMenu = () => {
               <DropdownMenuItem asChild>
                 {session ? (
                   <Link
-                    href='/dashboard'
+                    href='/'
                     className='w-full flex items-center gap-1.5'>
                     <LayoutDashboard className='mr-2 h-5 w-5' />
                     <span>Dashboard</span>
                   </Link>
                 ) : (
                   <Link
-                    href='/login'
+                    href='/'
                     className='flex w-full items-center gap-1.5'>
                     <LayoutDashboard className='mr-2 h-5 w-5' />
                     <span>Sign in</span>
@@ -71,7 +71,7 @@ const MobileMenu = () => {
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={signUserOut} className='gap-1.5'>
+              <DropdownMenuItem  className='gap-1.5'>
                 <User className='mr-2 h-5 w-5' />
                 <span>{isLoading ? 'Signing out' : 'Sign out'}</span>
                 {isLoading ? (
